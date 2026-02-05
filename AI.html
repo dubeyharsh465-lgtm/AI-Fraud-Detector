@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Detection">
+  <title>AI Voice Detection</title>
+  <link rel="stylesheet" href="AI.css">
+    
+</head>
+
+<body>
+
+  <div class="card">
+    <h2>AI Voice Detection</h2>
+
+    <label>Select Language:</label>
+    <select id="language">
+      <option>Tamil</option>
+      <option>English</option>
+      <option>Hindi</option>
+      <option>Malayalam</option>
+      <option>Telugu</option>
+    </select>
+
+    <label>Upload MP3 File:</label>
+    <input type="file" id="audioFile" accept="audio/mp3" />
+
+    <button onclick="sendAudio()">Detect Voice</button>
+
+    <h3>Result:</h3>
+    <pre id="output">Waiting...</pre>
+  </div>
+
+  <script src="AI.js"></script>
+
+</body>
+</html>
